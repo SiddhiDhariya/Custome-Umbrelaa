@@ -1,0 +1,170 @@
+@import "../css-config/mixins.scss";
+.container{
+    padding: 40px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 89vh;
+    @include md{
+        flex-direction: row;
+        height: 88.8vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .right{
+        height: 300px;
+        width: 350px;
+        margin: 5px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        @include md{
+            height: 400px;
+            width: 450px;
+            margin-left: 180px;
+            margin-top: 83px;
+        }
+        .img1{
+            height: 300px;
+            width: 350px;
+            @include md{
+                height: 400px;
+                width: 450px;
+                position: absolute;
+            }
+        }
+        
+        .img5{
+            height: 100px;
+            width: 100px;
+            margin: 100px 120px;
+            animation: spin 4 2s ease;
+            @include md{
+                height: 100px;
+                width: 100px;
+                margin: 150px 173px;
+            }
+        }
+        .logo{
+            height: 20px;
+            width:   120px;
+            position: absolute;
+            border: 1px solid black;
+            margin-top: 330px;
+            margin-left: 165px;
+        }
+    }
+    .left{
+        height: 300px;
+        width: 350px;
+        margin: 5px;
+        justify-content: left;
+       padding: 10px 0;
+        @include md{
+            height: 400px;
+            width: 450px;
+            margin-left: 180px;
+            margin-top: 83px;
+            padding: 50px 0;
+        }
+        h1{
+            color:rgb(45, 44, 44);
+            font-weight: 700;
+        }
+        .colors{
+            display: flex;
+            flex-direction: row;
+            gap: none;
+            justify-content: left;
+            align-items: center;
+            gap: 10px;
+            margin: 30px 0;
+            .b1{
+                height: 20px;
+                width: 20px;
+                background-color: #1974D2;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+            }
+            .y1{
+                height: 20px;
+                width: 20px;
+                background-color: #F5E216;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+            }
+            .p1{
+                height: 20px;
+                width: 20px;
+                background-color: #F6358A;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+            }
+        }
+        h2{
+            font-weight: 500;
+            font-size: 17px;
+        }
+        h3{
+            font-weight: 350;
+            font-size: 17px;
+        }
+        h4{
+            font-weight: 350;
+            font-size: 12px;
+        }
+        button{
+            height: 40px;
+            width:  265px;
+            border: none;
+            color: white;
+            font-weight: 400;
+            cursor: pointer;
+            padding-bottom: 7px;
+            &.pink{
+                background-color: #F6358A;
+            }
+            &.Yellow{
+                background-color: #f1e238;
+            }
+            &.blue{
+                background-color: #1974D2;
+            }
+        }
+        
+    }
+}
+.pink{
+    background-color: #d494b0;
+}
+.Yellow{
+    background-color: #dfda9e;
+}
+.blue{
+    background-color: #93bce5;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} 
+@keyframes delayimg{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
